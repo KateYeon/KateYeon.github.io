@@ -107,11 +107,11 @@ author:
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "Data Analytics"
   location         : "Korea Univ. & Bundang"
-  email            :
+  email            : hylee132@gmail.com
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-       url: mailto:hylee132@gmail.com
+      # url: mailto:your.name@email.com
     - label: "Website"
       icon: "fas fa-fw fa-link"
       # url: "https://your-website.com"
