@@ -16,7 +16,8 @@
 title: Data Science
 email: hylee132@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  
+고려대학교 통계학과
+지난 날 배운 수업 내용 복습과, 과제를 정리하는 개인 블로그입니다!
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "KateYeon.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: 
