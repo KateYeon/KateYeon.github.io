@@ -38,7 +38,7 @@ generative 모델은 class할당의 logic에서 joint distribution을 적용한�
 먼저 다음과 같은 가정을 한다.
 
 
-<img src="https://i.imgur.com/8aOqZuF.png" width="80%">
+<img src="https://i.imgur.com/8aOqZuF.png" width="70%">
 
 
 data의 생성 분포를 modal=2의 가우시안분포를 가정했다. parameter setting을 살펴보면, 각 클래스의 비중과 평균 covariance matrix를 전부 구함으로써 생성분포의 확률분포를 각각 전부 구하려는 것을 알 수 있다.
@@ -58,8 +58,7 @@ labled data만을 사용하여 각각 mle로 추정한 모수들을 갖는 가�
 초록색선이 두 class분포로부터 같은 확률을 갖는 점들을 이은 경계면이며 이를 decision boundary로 사용한다.
 
 
-<img src="https://i.imgur.com/24GS4xX.png" width="80%">
-
+<img src="https://i.imgur.com/24GS4xX.png?1" width="40%">
 
 여기에서 unlabled data를 추가해보자. 흩뿌려진 초록색점들의 unlabled data를 포함하여 분류경계면추정을 한다면 어떻게 decision boundary를 그린 모습은 아래와 같다.
 
