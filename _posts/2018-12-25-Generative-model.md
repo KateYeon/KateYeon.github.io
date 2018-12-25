@@ -28,11 +28,16 @@ generative 모델은 class할당의 logic에서 joint distribution을 적용한�
 
 
 지금까지는 discriminantive model과 generative model을 서로 설명, 비교하며 generative model의 대략적인 이해를 도왔다. 이번에는 간단한 simulation 그림으로 이해를 해보자.
+
+
 <img src="https://i.imgur.com/wROlBf6.png?1" width="40%">
+
 
 위의 그림은 두 class 를 갖는 labeled simulation data (X,Y)를 그린 그림이다. 만약 위의 simulation data에서 class 각각 gausian distribution에서 생성되었다는 가정을 한다면 Generative model을 사용하여 두 class의 분류경계면은 어떻게 추정될 수 있을까?
 
 먼저 다음과 같은 가정을 한다.
+
+
 <img src="https://i.imgur.com/8aOqZuF.png" width="85%">
 
 
@@ -45,17 +50,28 @@ data의 생성 분포를 modal=2의 가우시안분포를 가정했다. paramete
 여기까지 정리한 수의 분류는, 베이지안 정리를 사용하여 x가 주어졌을때 y(class)를 할당할 확률식을 표현할 수 있다.
 
 labled data만을 사용하여 각각 mle로 추정한 모수들을 갖는 가우시안분포를 그려본 모습이다.
+
+
 <img src="https://i.imgur.com/pjZJevv.png" width="40%">
 
+
 초록색선이 두 class분포로부터 같은 확률을 갖는 점들을 이은 경계면이며 이를 decision boundary로 사용한다.
+
+
 <img src="https://i.imgur.com/24GS4xX.png" width="80%">
 
 
 여기에서 unlabled data를 추가해보자. 흩뿌려진 초록색점들의 unlabled data를 포함하여 분류경계면추정을 한다면 어떻게 decision boundary를 그린 모습은 아래와 같다.
 
+
 <img src="https://i.imgur.com/C8q4Hm9.png" width="40%">
+
+
 labeled data만을 사용하여 class boundary를 그린모습과, unlabled data(초록색 점들)를 포함하여 boundary를 그린 모습을 비교해보면, 각각의 class 생성분포또한 분명하게 변했으며, 분류경계면 또한 확실히 변해있는 것을 확인 할 수 있다.
+
+
 <img src="https://i.imgur.com/Np7gym3.png" width="80%">
+
 
 이 두 경계면이 다른 이유는 사실은 당연하다.
 둘은 서로 다른 생성확률분포를 maximize하기 때문이다.
