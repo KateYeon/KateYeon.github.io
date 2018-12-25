@@ -48,14 +48,14 @@ labled data만을 사용하여 각각 mle로 추정한 모수들을 갖는 가�
 <img src="https://i.imgur.com/pjZJevv.png" width="40%">
 
 초록색선이 두 class분포로부터 같은 확률을 갖는 점들을 이은 경계면이며 이를 decision boundary로 사용한다.
-![Imgur](https://i.imgur.com/24GS4xX.png)
+<img src="https://i.imgur.com/24GS4xX.png" width="80%">
+
 
 여기에서 unlabled data를 추가해보자. 흩뿌려진 초록색점들의 unlabled data를 포함하여 분류경계면추정을 한다면 어떻게 decision boundary를 그린 모습은 아래와 같다.
 
 <img src="https://i.imgur.com/C8q4Hm9.png" width="40%">
 labeled data만을 사용하여 class boundary를 그린모습과, unlabled data(초록색 점들)를 포함하여 boundary를 그린 모습을 비교해보면, 각각의 class 생성분포또한 분명하게 변했으며, 분류경계면 또한 확실히 변해있는 것을 확인 할 수 있다.
-
-![Imgur](https://i.imgur.com/Np7gym3.png)
+<img src="https://i.imgur.com/Np7gym3.png" width="80%">
 
 이 두 경계면이 다른 이유는 사실은 당연하다.
 둘은 서로 다른 생성확률분포를 maximize하기 때문이다.
