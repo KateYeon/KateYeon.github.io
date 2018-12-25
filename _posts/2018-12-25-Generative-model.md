@@ -130,7 +130,6 @@ Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most ou
 #### reference
 강필성(비즈니스 애널러틱스 강의자료,2018) ,Xiaojin Zhu(2007), choi(2015), 강성호(generative model code,2017)
 
-
 [jekyll-docs]: https://jekyllrb.com/docs/home
 [jekyll-gh]:   https://github.com/jekyll/jekyll
 [jekyll-talk]: https://talk.jekyllrb.com/
