@@ -38,7 +38,7 @@ generative 모델은 class할당의 logic에서 joint distribution을 적용한�
 먼저 다음과 같은 가정을 한다.
 
 
-<img src="https://i.imgur.com/8aOqZuF.png" width="85%">
+<img src="https://i.imgur.com/8aOqZuF.png" width="80%">
 
 
 data의 생성 분포를 modal=2의 가우시안분포를 가정했다. parameter setting을 살펴보면, 각 클래스의 비중과 평균 covariance matrix를 전부 구함으로써 생성분포의 확률분포를 각각 전부 구하려는 것을 알 수 있다.
