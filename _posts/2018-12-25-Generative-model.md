@@ -1,5 +1,5 @@
 ---
-title:Generative Models
+title: Generative Models
 categories:
 - Business Analytics
 excerpt: |
@@ -10,6 +10,7 @@ feature_text: |
 feature_image: "https://picsum.photos/2560/600?image=872"
 image: "https://picsum.photos/2560/600?image=733"
 ---
+
 
 ### Discriminative vs Generative
 
