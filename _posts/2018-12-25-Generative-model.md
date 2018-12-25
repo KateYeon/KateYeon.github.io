@@ -45,8 +45,7 @@ data의 생성 분포를 modal=2의 가우시안분포를 가정했다. paramete
 여기까지 정리한 수의 분류는, 베이지안 정리를 사용하여 x가 주어졌을때 y(class)를 할당할 확률식을 표현할 수 있다.
 
 labled data만을 사용하여 각각 mle로 추정한 모수들을 갖는 가우시안분포를 그려본 모습이다.
-
-![Imgur](https://i.imgur.com/pjZJevv.png)
+<img src="https://i.imgur.com/pjZJevv.png" width="40%">
 
 초록색선이 두 class분포로부터 같은 확률을 갖는 점들을 이은 경계면이며 이를 decision boundary로 사용한다.
 <img src="https://i.imgur.com/24GS4xX.png" width="40%">
