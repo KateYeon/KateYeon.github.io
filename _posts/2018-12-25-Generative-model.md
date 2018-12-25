@@ -1,5 +1,5 @@
 ---
-title: Semi-Supervised Learning(2):Generative Models
+title:Generative Models
 categories:
 - Business Analytics
 excerpt: |
@@ -13,11 +13,7 @@ image: "https://picsum.photos/2560/600?image=733"
 
 ### Discriminative vs Generative
 
-discriminative 모델은 우리가 흔히 사용하는 다중회귀식을 생각해 볼수 있다. p(Y|X)로, 주어진 Input data를 사용해서 y를 어디에 할당할 것인가?의 문제인 것이다.
-
-generative 모델은 class할당의 logic에서 joint distribution을 적용한다. 먼저 class에 대한 확률분포를 정의하고 p(y) 그 클래스로부터 x라는 설명변수가 나왔다고 정의한다.
-
-discriminative model은 설명변수만 주어지면 어떤분포로부터 설명변수가 생성되었는지는 관심 없고 생성된 class변수를 바탕으로 학습시켜서 후에 class예측 또는 분류만을 목표로 했다면, generative model은 데이터가 어떤 메커니즘에 의해서 생성되었는지 판별,설명 또는 설명변수 분포를 생성하고 싶어한다. 따라서, 설명변수p(y)와 종속변수p(x|y)의 조합p(y)p(x|y)이 어떻게 생성되었는지에 대한 생성확률을 최대화 하는 모델을 학습시키고자한다. 
+discriminative 모델은 우리가 흔히 사용하는 다중회귀식을 생각해 볼수 있다. 주어진 Input data를 사용해서 y를 어디에 할당할 것인가?의 문제인 것이다. generative 모델은 class할당의 logic에서 joint distribution을 적용한다. 먼저 class에 대한 확률분포를 정의하고 그 클래스로부터 x라는 설명변수가 나왔다고 정의한다. discriminative model은 설명변수만 주어지면 어떤분포로부터 설명변수가 생성되었는지는 관심 없고 생성된 class변수를 바탕으로 학습시켜서 후에 class예측 또는 분류만을 목표로 했다면, generative model은 데이터가 어떤 메커니즘에 의해서 생성되었는지 판별,설명 또는 설명변수 분포를 생성하고 싶어한다. 따라서, 설명변수p(y)와 종속변수p(x|y)의 조합p(y)p(x|y)이 어떻게 생성되었는지에 대한 생성확률을 최대화 하는 모델을 학습시키고자한다. 
 
 예를 들어서, discriminantive model 와 generative model 모두 분류가 모델의 목적일때, 두 모델은 decision boundary를 추정한다.  discriminantive model 은 주어진 설명변수와 labled종속변수 정보만으로 모델을 학습시키고, 분류경계면을 추정하여 미래의 input data에 대한 분류를 한다.
 
@@ -97,12 +93,12 @@ labeled data만을 사용하여 class boundary를 그린모습과, unlabled data
 
 이 단계에서는 0단계와 1단계(E-step) 2단계(M-step)로 설명할 수있고, maximum iteration까지 1,2단계를 반복해서 문제를 풀 수 있다.
 
-![Imgur](https://i.imgur.com/OM51Vdz.png)
+![Imgur](https://i.imgur.com/vAb77z8.png)
 
 그림으로 설명을 step1 의 덧붙여 설명해본다면,아래와 같다. 
 unlabeld data(초록색점들)을 빨간색 X표자로 대신해서 설명하면, 각각의 빨간색X점에 대하여 class(Y)가1일때의 선택한 x가 생성될 확률과 class(Y)가 2일때의 선택한 x가 생성될 확률을 구할 수 있다.
 
-![Imgur](https://i.imgur.com/vNtJPyj.png)
+![Imgur](https://i.imgur.com/DHciDC4.png)
 
 결국 키는 처음에 설정한 object function을 maximize 하는 것이다.
 현재의 case study에서는 EM algorithm을 사용하였지만, 이는 object function을 maximize하기위한 하나의 방법일 뿐이다. 다른 방법들도 충분히 가능하다. 다른 방법으로는 vriational approximation 또는 direct optimization방법이 있다.
