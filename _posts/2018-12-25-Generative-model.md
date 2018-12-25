@@ -11,10 +11,13 @@ feature_image: "https://picsum.photos/2560/600?image=872"
 image: "https://picsum.photos/2560/600?image=733"
 ---
 
-
 ### Discriminative vs Generative
 
-discriminative 모델은 우리가 흔히 사용하는 다중회귀식을 생각해 볼수 있다. 주어진 Input data를 사용해서 y를 어디에 할당할 것인가?의 문제인 것이다. generative 모델은 class할당의 logic에서 joint distribution을 적용한다. 먼저 class에 대한 확률분포를 정의하고 그 클래스로부터 x라는 설명변수가 나왔다고 정의한다. discriminative model은 설명변수만 주어지면 어떤분포로부터 설명변수가 생성되었는지는 관심 없고 생성된 class변수를 바탕으로 학습시켜서 후에 class예측 또는 분류만을 목표로 했다면, generative model은 데이터가 어떤 메커니즘에 의해서 생성되었는지 판별,설명 또는 설명변수 분포를 생성하고 싶어한다. 따라서, 설명변수p(y)와 종속변수p(x|y)의 조합p(y)p(x|y)이 어떻게 생성되었는지에 대한 생성확률을 최대화 하는 모델을 학습시키고자한다. 
+discriminative 모델은 우리가 흔히 사용하는 다중회귀식을 생각해 볼수 있다. p(Y|X)로, 주어진 Input data를 사용해서 y를 어디에 할당할 것인가?의 문제인 것이다.
+
+generative 모델은 class할당의 logic에서 joint distribution을 적용한다. 먼저 class에 대한 확률분포를 정의하고 p(y) 그 클래스로부터 x라는 설명변수가 나왔다고 정의한다.
+
+discriminative model은 설명변수만 주어지면 어떤분포로부터 설명변수가 생성되었는지는 관심 없고 생성된 class변수를 바탕으로 학습시켜서 후에 class예측 또는 분류만을 목표로 했다면, generative model은 데이터가 어떤 메커니즘에 의해서 생성되었는지 판별,설명 또는 설명변수 분포를 생성하고 싶어한다. 따라서, 설명변수p(y)와 종속변수p(x|y)의 조합p(y)p(x|y)이 어떻게 생성되었는지에 대한 생성확률을 최대화 하는 모델을 학습시키고자한다. 
 
 예를 들어서, discriminantive model 와 generative model 모두 분류가 모델의 목적일때, 두 모델은 decision boundary를 추정한다.  discriminantive model 은 주어진 설명변수와 labled종속변수 정보만으로 모델을 학습시키고, 분류경계면을 추정하여 미래의 input data에 대한 분류를 한다.
 
